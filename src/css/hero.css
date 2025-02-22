@@ -37,7 +37,7 @@
 
 
 
-. @media screen and (min-resolution:2x) {
+@media screen and (min-resolution:2x) {
     .hero-img {
         background-image: url(/img/hero/hero-mob@2x.webp);
     }
