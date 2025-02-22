@@ -37,7 +37,7 @@
 
 
 
-. @media screen and (min-resolution:2x) {
+@media screen and (min-resolution:2x) {
     .hero-img {
         background-image: url(/img/hero/hero-mob@2x.webp);
     }
@@ -94,9 +94,9 @@
         margin: 0 auto;
     }
 
-    @media screen and (min-resolution:2x) {
-        .hero-img {
-            background-image: url(/img/hero/hero-tab@2x.webp);
+@media screen and (min-resolution:2x) {
+    .hero-img {
+        background-image: url(/img/hero/hero-tab@2x.webp);
         }
     }
 }
@@ -147,9 +147,9 @@
         padding: 0;
     }
 
-    @media screen and (min-resolution:2x) {
-        .hero-img {
-            background-image: url(/img/hero/hero-des@2x.webp);
+@media screen and (min-resolution:2x) {
+    .hero-img {
+        background-image: url(/img/hero/hero-des@2x.webp);
         }
     }
 
