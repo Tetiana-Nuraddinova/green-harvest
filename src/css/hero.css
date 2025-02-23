@@ -119,6 +119,8 @@
     .hero {
         padding-top: 0;
         display: flex;
+        margin: 0 auto;
+        max-width: 1280px;
     }
 
     .hero-text {
