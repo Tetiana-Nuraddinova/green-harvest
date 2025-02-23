@@ -1,6 +1,5 @@
 .footer {
-    padding: 40px 0; 
-    margin: 0 auto;  
+    padding: 40px 0;       
 }
 
 .footer-container{
@@ -29,7 +28,7 @@
     max-width: 335px;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.42857;
+    line-height: 1.43;
     color: #fbfbfb;    
 }
 
@@ -64,7 +63,7 @@
 .footer-contacts-item{
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.42857;
+    line-height: 1.43;
     color: #fbfbfb;
     max-width: 179px;
 }
@@ -87,27 +86,22 @@
     height: 20px;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.42857;
+    line-height: 1.43;
     color: #d4bfc4;    
 }
 
 .footer-links-text{
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.42857;
+    line-height: 1.43;
     color: #d4bfc4;
-}
-
-@media only screen and (min-width: 375px) {
-    .footer {
-        max-width: 335px;        
-    }
 }
 
 @media only screen and (min-width: 768px) {
     .footer {
         max-width: 768px;
         padding: 32px 0;
+        margin: 0 auto;
     }
 
     .footer-container {
