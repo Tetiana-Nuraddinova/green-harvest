@@ -1,1 +1,40 @@
-.howitworks{}
+.how-it-works {
+  padding: 40px 0;
+}
+
+.woman-hiw {
+  /* height: 452px; */
+  border-radius: 30px;
+  margin-bottom: 40px;
+}
+
+.content-hiw {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #576f35;
+}
+
+.title-hiw {
+  color: #fbfbfb;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.015em;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.grey {
+  color: #d4bfc4;
+}
+
+.text-hiw {
+  color: #fbfbfb;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 40px;
+}
