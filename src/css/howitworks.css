@@ -1,11 +1,23 @@
-.how-it-works {
-  padding: 40px 0;
+.img-hiw {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+/* --  counter for steps 1-2-3  -- */
+.steps-hiw {
+  counter-reset: count 0;
+}
+
+h3 {
+  counter-increment: count;
+}
+
+h3::before {
+  content: counter(count);
 }
 
 .woman-hiw {
   /* height: 452px; */
   border-radius: 30px;
-  margin-bottom: 40px;
 }
 
 .content-hiw {
@@ -19,13 +31,13 @@
   font-size: 28px;
   font-weight: 600;
   line-height: 1;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.01em;
   text-align: left;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
 
-.grey {
+.s-grey {
   color: #d4bfc4;
 }
 
@@ -34,7 +46,61 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 1.43;
-  letter-spacing: 0em;
   text-align: left;
   margin-bottom: 40px;
+}
+
+.steps-hiw {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.item-steps-hiw {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  border-radius: 15px;
+  background-color: #fbfbfb;
+  padding: 12px 24px;
+}
+
+.counter-steps-hiw {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border: 5px solid rgb(212, 191, 196);
+  border-radius: 50%;
+  background: rgb(122, 49, 69);
+  text-align: center;
+  color: #fbfbfb;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.11;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  align-self: center;
+}
+
+.co-count {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+}
+
+.action-items-hiw {
+  color: #858585;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.s-black {
+  font-weight: 700;
+  color: #141414;
 }

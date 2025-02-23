@@ -1,21 +1,38 @@
 <section class="how-it-works">
   <div class="container img-hiw">
-    <img
-      class="woman-hiw"
-      srcset="
-        ../img/howitworks/woman-tab.webp    1x,
-        ../img/howitworks/woman-tab@2x.webp 2x
-      "
-      src="../img/howitworks/woman-tab.webp"
-      alt="woman-veget"
-      width="335"
-      height="452"
-    />
+    <picture>
+      <source
+        media="(min-width: 1158px)"
+        srcset="
+          ../img/howitworks/woman-des.webp    1x,
+          ../img/howitworks/woman-des@2x.webp 2x
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ../img/howitworks/woman-tab.webp    1x,
+          ../img/howitworks/woman-tab@2x.webp 2x
+        "
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ../img/howitworks/woman-mob.webp    1x,
+          ../img/howitworks/woman-mob@2x.webp 2x
+        "
+      />
+      <img
+        class="woman-hiw"
+        src="../img/howitworks/woman-mob.webp"
+        alt="woman-veget"
+      />
+    </picture>
   </div>
   <div class="container content-hiw">
     <h2 class="title-hiw">
-      To order your <span class="grey">vegetable</span> basket, simply follow
-      these <span class="grey">easy steps</span>
+      To order your <span class="s-grey">vegetable</span> basket, simply follow
+      these <span class="s-grey">easy steps</span>
     </h2>
     <p class="text-hiw">
       Our baskets are assembled with care and delivered straight to your
@@ -24,12 +41,35 @@
     </p>
     <ol class="steps-hiw">
       <li class="items-hiw">
-        Just choose the vegetable you want to order by clicking on the
-        checkboxes next to it.
+        <div class="item-steps-hiw">
+          <h3 class="counter-steps-hiw"></h3>
+          <p class="action-items-hiw">
+            Just choose <span class="s-black">the vegetable</span> you want to
+            order by clicking on the checkboxes
+            <span class="s-black">next to it</span>.
+          </p>
+        </div>
       </li>
-      <li class="items-hiw">Click on the basket and fill out the form.</li>
       <li class="items-hiw">
-        Sit back and relax! Your fresh vegetables basket will be delivered.
+        <div class="item-steps-hiw">
+          <div class="co-count">
+            <h3 class="counter-steps-hiw">2</h3>
+          </div>
+          <p class="action-items-hiw">
+            Click on <span class="s-black">the basket</span> and fill out the
+            form.
+          </p>
+        </div>
+      </li>
+      <li class="items-hiw">
+        <div class="item-steps-hiw">
+          <h3 class="counter-steps-hiw"></h3>
+          <p class="action-items-hiw">
+            Sit back and relax! Your
+            <span class="s-black">fresh vegetables</span> basket will be
+            delivered.
+          </p>
+        </div>
       </li>
     </ol>
   </div>
