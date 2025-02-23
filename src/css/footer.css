@@ -1,27 +1,6 @@
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-address {
-    font-style: normal;
-}
-
 .footer {
-    padding: 40px 20px; 
-    margin: 0 auto;    
-    max-width: 375px;       
+    padding: 40px 0; 
+    margin: 0 auto;  
 }
 
 .footer-container{
@@ -37,7 +16,7 @@ address {
     flex-wrap: wrap;
     flex-direction: column;
     gap: 14px; 
-    margin-bottom: 40px;
+    margin-bottom: 40px;    
 }
 
 .logo-icon{
@@ -128,7 +107,7 @@ address {
 @media only screen and (min-width: 768px) {
     .footer {
         max-width: 768px;
-        padding: 32px 32px;
+        padding: 32px 0;
     }
 
     .footer-container {
@@ -205,7 +184,7 @@ address {
 @media only screen and (min-width: 1280px) {
     .footer {
         max-width: 1280px;
-        padding: 52px 100px;
+        padding: 52px 0;
     }
 
     .footer-container {
