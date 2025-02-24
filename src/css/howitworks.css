@@ -4,14 +4,14 @@
 }
 /* --  counter for steps 1-2-3  -- */
 .steps-hiw {
-  counter-reset: count 0;
+  counter-reset: count;
 }
 
-h3 {
+.items-hiw {
   counter-increment: count;
 }
 
-h3::before {
+.counter-steps-hiw::before {
   content: counter(count);
 }
 
@@ -68,6 +68,9 @@ h3::before {
 }
 
 .counter-steps-hiw {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-shrink: 0;
   width: 52px;
   height: 52px;
@@ -81,14 +84,6 @@ h3::before {
   line-height: 1.11;
   letter-spacing: -0.015em;
   text-transform: uppercase;
-  align-self: center;
-}
-
-.co-count {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  align-items: center;
 }
 
 .action-items-hiw {
@@ -116,32 +111,19 @@ h3::before {
 
   .item-steps-hiw {
     min-width: 440px;
-
-    gap: 24px;
-
-    padding: 12px 24px;
+    padding: 12px 15px 12px 24px;
   }
+
   .title-hiw {
-    color: #fbfbfb;
     font-size: 32px;
-    font-weight: 600;
-    line-height: 1;
-    letter-spacing: -0.01em;
     margin-bottom: 24px;
   }
 
   .text-hiw {
-    color: #fbfbfb;
     font-size: 16px;
-    font-weight: 500;
-    line-height: 1.43;
-    text-align: left;
     margin-bottom: 52px;
   }
 
-  .item-steps-hiw {
-    padding: 12px 15px 12px 24px;
-  }
   .action-items-hiw {
     font-size: 16px;
     line-height: 1.25;
@@ -154,13 +136,11 @@ h3::before {
   }
 
   .img-hiw {
-    width: 50%;
     padding: 100px;
     margin: 0 0 0 auto;
   }
 
   .content-hiw {
-    width: 50%;
     padding: 100px;
     margin: 0 auto 0 0;
   }
