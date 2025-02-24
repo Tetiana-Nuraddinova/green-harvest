@@ -1,20 +1,16 @@
-.container {
-  width: 100%;
-}
-
 .reviews {
   display: block;
   max-width: 375px;
   height: auto;
   padding: 80px 20px;
   margin: 0 auto;
-  gap: 20px;
   background-color: #fbfbfb;
 }
 
 .reviews-title {
   max-width: 100%;
   margin-bottom: 40px;
+  color: #141414;
 }
 
 .reviews-subtitle {
@@ -67,6 +63,7 @@
 }
 
 .reviews-card-name {
+  font-weight: 600;
   font-size: 18px;
   line-height: 1.11;
   letter-spacing: -0.01em;
@@ -84,10 +81,15 @@
   color: #858585;
 }
 
+@media (min-width: 320px) and (max-width: 374px) {
+  .reviews-subtitle {
+    font-size: 46px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .reviews {
     max-width: 768px;
-    height: auto;
     padding: 100px 32px;
   }
 
@@ -96,27 +98,14 @@
     margin-bottom: 52px;
   }
   .reviews-subtitle {
-    font-weight: 600;
     font-size: 64px;
     line-height: 1;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
 
   .reviews-text {
-    font-weight: 500;
     font-size: 16px;
     line-height: 1.25;
-    color: #141414;
-  }
-
-  .reviews-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    gap: 24px;
   }
 
   .reviews-item {
@@ -132,24 +121,13 @@
   .reviews-card-text {
     font-size: 16px;
     line-height: 1.25;
-    text-align: center;
-    color: #858585;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .reviews {
     max-width: 1280px;
-    height: auto;
     padding: 100px;
-  }
-
-  .reviews-subtitle {
-    margin-bottom: 0;
-  }
-
-  .reviews-text {
-    display: none;
   }
 
   .reviews-item {
