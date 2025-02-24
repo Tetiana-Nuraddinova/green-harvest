@@ -1,12 +1,7 @@
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-}
-.test {
-    background-color: rgb(101, 101, 174);
+.header{
+    width: 100%;
+    position: absolute;
+    top: 32px;
 }
 
 .header-logo {
@@ -22,20 +17,21 @@
     text-align: center;
     color: #fbfbfb;
     white-space: nowrap;
-    margin-top: 32px;
     display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    align-items: center;
 }
 
 .header-nav {
+    margin: 0 0;
     gap: 20px;
     display: flex;
 }
 
 .header-list{
    display: flex;
-   align-items: flex-start;
-   justify-content: flex-start;
-   flex-direction: row;
    gap: 8px;
 }
 
@@ -64,3 +60,9 @@
     cursor: pointer;
 }
 
+.header-menu-button{
+    fill: #fbfbfb;
+    display: flex;
+    justify-content: flex-end;
+    display: none;
+}
