@@ -75,6 +75,11 @@
     .hero {
         padding-top: 120px;
     }
+        .hero-container {
+        
+            margin: 0 ;
+          
+        }
 
     .hero-text {
         margin-bottom: 52px;

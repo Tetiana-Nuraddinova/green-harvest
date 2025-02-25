@@ -1,6 +1,5 @@
 .img-hiw {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 20px;
 }
 /* --  counter for steps 1-2-3  -- */
 .steps-hiw {
@@ -21,8 +20,7 @@
 }
 
 .content-hiw {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding: 80px 20px;
   background-color: #576f35;
 }
 
@@ -53,7 +51,6 @@
 .steps-hiw {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 20px;
 }
 
