@@ -122,5 +122,10 @@
         max-width: 1280px;
         padding: 0 32px;
     }
+    .header-btn:focus,
+    .header-btn:hover {
+        background-color: #d4bfc4;
+        color: #7a3145;
+    }
     
 }
