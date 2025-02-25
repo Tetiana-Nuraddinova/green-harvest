@@ -1,3 +1,162 @@
-.mobile-menu{
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 20, 20, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.overlay.is-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mobile-menu {
+    background-color: rgb(87, 111, 53);
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    transition: right 0.3s ease;
+}
+
+.mobile-menu.is-open {
+    right: 0;
+}
+
+.mobile-menu-container {
+    position: relative;
+    height: 100vh;
+    padding-top: 296px;
+    padding-bottom: 52px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.close-button {
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    top: 20px;
+    right: 20px;
+}
+
+.close-icon-mobile {
+    stroke: #ffffff;
+    display: block;
+}
+.close-icon-tablet {
+    stroke: #ffffff;
+    display: none;
+}
+
+.nav-menu {
+    margin: 0 auto;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 118px;
+    height: 44px;
+    background-color: transparent;
+    border: 1px solid rgb(251, 251, 251);
+    border-radius: 12px;
+}
+
+.menu-item .link {
+    color: rgb(251, 251, 251);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.43;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.menu-item .link.current {
+    color: rgb(122, 49, 69);
+}
+
+.menu-item:has(.link.current) {
+    background-color: white;
+    border-color: white;
+}
+
+.button {
+    display: block;
+    width: 175px;
+    height: 52px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.11;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    color: rgb(251, 251, 251);
+    background-color: rgb(122, 49, 69);
+    border: none;
+    border-radius: 30px;
+    margin: 0 auto;
+}
+
+
+@media (min-width: 768px) {
+    .mobile-menu {
+        width: 351px;
+    }
     
+    .mobile-menu-container {
+        padding-top: 360px;
+        padding-bottom: 48px;
+    }
+
+    .close-button {
+        width: 40px;
+        height: 40px;
+        top: 32px;
+        right: 32px;
+    }
+    .close-icon-mobile {
+        display: none;
+    }
+    .close-icon-tablet {
+        display: block;
+    }
+
+    .menu-item .link {
+        font-size: 16px;
+        line-height: 1.25;
+    }
+
+    .button {
+        width: 157px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .overlay {
+        display: none;
+    }
+    .mobile-menu{
+        display: none;
+    }
 }
