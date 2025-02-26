@@ -51,6 +51,16 @@
     color: #fbfbfb;
 }
 
+.header-list-item:hover,
+.header-list-item:focus {
+  background-color: #d4bfc4;
+  color:#7a3145;
+}
+
+.header-list-item:active {
+    background-color: #fbfbfb;
+    color: #7a3145;
+}
 
 .header-btn{
     display: flex;

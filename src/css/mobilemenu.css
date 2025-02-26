@@ -15,21 +15,28 @@
 
 .overlay.is-open {
     opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
+    visibility: visible;
+     pointer-events: auto;
 }
 
 .mobile-menu {
     background-color: #576f35;
     position: relative;
-       
         display: flex;
         flex-direction: column;
         align-items: center;
         height: 100%;
         transform: translateX(100%);
         transition: transform 0.3s ease-in-out;
+        /* ------------------------ */
+        width: 100%;
+        padding-top: 52px;
+        padding-bottom: 52px;
     }
+
+
+        
+
 
 .mobile-menu.is-open {
     transform: translateX(0);
@@ -48,8 +55,9 @@
         top: 20px;
         right: 20px;
         width: 32px;
-            height: 32px;
+        height: 32px;
 }
+
 
 
 .close-icon-mobile {
@@ -57,8 +65,17 @@
    
 }
 
-
-
+/* ================================= */
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+           
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+}
+/* =================================== */
 
 .menu-list {
     display: flex;
@@ -72,11 +89,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 118px;
-    height: 44px;
     background-color: transparent;
-    border: 1px solid #fbfbfb;
-    border-radius: 12px;
+
 }
 
 .menu-item .link {
@@ -86,16 +100,28 @@
     line-height: 1.43;
     letter-spacing: 0em;
     text-align: center;
+    padding: 12px 18px;
+    border: 1px solid #fbfbfb;
+    border-radius: 12px;
+    min-width: 118px;
+    cursor: pointer;
 }
 
-.menu-item .link.current {
+.menu-item .link:active {
+    background-color: #fbfbfb;
     color: #7a3145;
-}
 
-.menu-item:has(.link.current) {
+}
+/* .menu-item .link.current {
+    color: #7a3145;
+    
+} */
+
+/* .menu-item:has(.link.current) {
     background-color: #fbfbfb;
     border-color: #fbfbfb;
-}
+    border-radius: 12px;
+} */
 
 .button {
     display: block;
@@ -113,7 +139,13 @@
    
     
 }
- .container-nav {
+.button:hover,
+.button:focus {
+    background-color: #fbfbfb;
+    color: #7a3145;
+}
+
+ /* .container-nav {
     margin: 0;
     position: fixed;
     bottom: 52px;
@@ -122,7 +154,7 @@
     align-items: center;
     justify-content: center;
     gap: 232px;
- }
+ } */
 
 @media (min-width: 768px) {
     .mobile-menu {
@@ -150,9 +182,12 @@
         width: 157px;
         bottom: 48px;
     }
-        .container-nav {
-            gap: 380px;
-            bottom: 48px;
+.container-nav {
+    gap: 380px;
+    bottom: 48px;
         }
 }
 
+
+
+ 

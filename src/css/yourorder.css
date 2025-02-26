@@ -306,7 +306,8 @@
     .order-form-textarea {
         max-width: 428px;
     }
-  .order-form-button:focus{
+  .order-form-button:focus,
+  .order-form-button:hover{
         background: #d4bfc4;
         color: #7a3145;
   }
