@@ -2,14 +2,12 @@
 .advertisement {
     padding-top: 80px;
     padding-bottom: 80px;
-    max-width: 375px;
     height: 472px;
-    background: #FBFBFB;
+    background-color: #FBFBFB;
     margin: 0 auto;
 }
 
 .section-ad {
-    height: 312px;
     text-align: start;
     align-items: center;
 }
@@ -20,7 +18,7 @@
     line-height: 1.08;
     letter-spacing: -0.01em;
     text-transform: uppercase;
-    color: #141414;    
+    color: #141414;
 }
 
 .text-sp {
@@ -32,42 +30,42 @@
 }
 
 @media screen and (min-width: 768px) {
-.advertisement {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    max-width: 768px;
-
+    .advertisement {
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 
-.text-pr {
-    font-size: 64px;
-    line-height: 1.0;
-}
-.text-sp {
-    height: 86px;
-    padding-top: 20px;
-}
+    .text-pr {
+        font-size: 64px;
+        line-height: 1;
+    }
+
+    .text-sp {
+        height: 86px;
+        padding-top: 20px;
+    }
 }
 
 @media screen and (min-width: 1280px) {
-.advertisement {
-    padding: 100px;
-    max-width: 1280px;
-    position: absolute;
+    .advertisement {
+        padding: 100px;
     }
-.section-ad {
-    max-width: 1080px;
-    height: 228px;
-    margin-right: 13px;
-}
-.text-pr {
-    font-size: 76px;
-}
-.text-sp {
-    height: 84px;
-    padding-left: 13px;
-    margin-left: -13px;
-    padding-top: 0px;
-}
+
+    .section-ad {
+        padding: 0;
+        width: 1080px;
+        height: 228px;
+    }
+
+    .text-pr {
+        font-size: 76px;
+    }
+
+    .text-sp {
+        height: 84px;
+        padding-left: 13px;
+        margin-left: -13px;
+        padding-top: 0px;
+    }
 
 }
