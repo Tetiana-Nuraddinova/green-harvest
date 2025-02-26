@@ -1,14 +1,21 @@
 .hero {
     padding-top: 100px;
-    background-color: #576F35;
+    background: #576F35;
+}
+
+.hero-container {
+    min-width: 320px;
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .hero-text {
     margin-bottom: 40px;
-
 }
 
 .hero-title {
+
     font-weight: 600;
     font-size: 52px;
     line-height: 1;
@@ -37,7 +44,7 @@
 
 
 
-. @media screen and (min-resolution:2x) {
+@media screen and (min-resolution:2x) {
     .hero-img {
         background-image: url(/img/hero/hero-mob@2x.webp);
     }
@@ -66,12 +73,22 @@
 
 @media screen and (min-width: 768px) {
     .hero {
+        padding-top: 0;
+    }
+
+    .hero-section {
         padding-top: 120px;
+    }
+
+    .hero-container {
+        max-width: 768px;
+        padding: 0
     }
 
     .hero-text {
         margin-bottom: 52px;
         max-width: 704px;
+
     }
 
     .hero-title {
@@ -102,23 +119,25 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .container {
+    .hero-container {
         padding: 0;
         margin: 0;
         margin-left: auto;
         max-width: 640px;
     }
 
-    .hero {
+    .hero-section {
         padding-top: 0;
         display: flex;
+        margin: 0 auto;
+        max-width: 1280px;
     }
 
     .hero-text {
         margin-top: 232px;
         margin-left: 100px;
         margin-right: 36px;
-        margin-bottom: 0;
+        margin-bottom: 52px;
         max-width: 504px;
     }
 
@@ -129,10 +148,7 @@
 
     .hero-subtitle {
         width: 472px;
-        padding-bottom: 52px;
     }
-
-
 
     .container-img {
         width: 640px;
@@ -141,10 +157,8 @@
     .hero-img {
         background-image: url(/img/hero/hero-des.webp);
         max-width: 640px;
-        height: 796px;
-        margin: 0;
+        min-height: 796px;
         margin-right: auto;
-        padding: 0;
     }
 
     @media screen and (min-resolution:2x) {
