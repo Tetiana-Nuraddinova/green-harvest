@@ -1,14 +1,15 @@
 .advertisement {
     padding-top: 80px;
     padding-bottom: 80px;
-    min-width: 375px;
+    /* min-width: 375px; */
     height: 472px;
     background-color: #FBFBFB;
     margin: 0 auto;
+    background-color: bisque;
 }
 
 .section-ad {
-    height: 312px;
+    /* height: 312px; */
     text-align: start;
     align-items: center;
 }
@@ -23,12 +24,13 @@
 }
 
 .text-sp {
-    height: 102px;
+    /* height: 102px; */
     display: inline-block;
     border-radius: 12px;
     padding-right: 20px;
     background: #576F35;
     color: #FBFBFB;
+    max-width: 335px;
 }
 
 @media screen and (min-width: 768px) {
