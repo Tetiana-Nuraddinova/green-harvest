@@ -1,9 +1,9 @@
 .how-it-works {
   background: linear-gradient(to bottom, #7a3145 56%, #576f35 50%);
 }
-.img-hiw {
+.img-hiw { 
   padding: 40px 20px;
-  
+  background-color: #7a3145;
 }
 /* --  counter for steps 1-2-3  -- */
 .steps-hiw {
@@ -25,11 +25,20 @@
 }
 
 .content-hiw {
+  
   padding: 80px 20px; 
   margin: 0 auto;
+  background-color: #576f35;
+}
+.text-cont-hiw {
+  margin-bottom: 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title-hiw {
+  max-width: 335px;
   color: #fbfbfb;
   font-size: 28px;
   font-weight: 600;
@@ -50,17 +59,20 @@
   font-weight: 500;
   line-height: 1.43;
   text-align: left;
+  max-width: 335px;
   margin-bottom: 40px;
 }
 
 .steps-hiw {
+  
   display: flex;
-  flex-direction: column;
+    flex-direction: column;
+    align-items: center;
   gap: 20px;
 }
 
 .item-steps-hiw {
-  width: 100%;
+  max-width: 335px;
   display: flex;
   align-items: center;
   gap: 24px;
@@ -151,8 +163,11 @@
     padding: 100px;
     margin: 0 auto 0 0;
   }
-
+  .title-hiw {
+    min-width: 440px;
+  }
   .text-hiw {
+    min-width: 440px;
     margin-bottom: 104px;
   }
 }
