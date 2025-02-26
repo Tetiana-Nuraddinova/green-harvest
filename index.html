@@ -37,7 +37,13 @@
       </ul>
       <button class="header-btn" type="button">Shop now</button>
     </nav>
-    <button class="header-menu-button" type="button" data-menu-open>
+    <button
+      aria-label="menu"
+      aria-expanded="false"
+      class="header-menu-button"
+      type="button"
+      data-menu-open
+    >
       <svg class="header-menu-button-icon" width="40" height="40">
         <use href="/green-harvest/assets/icons-CAKR4h1E.svg#icon-menu-des"></use>
       </svg>
@@ -47,25 +53,30 @@
 
     <div class="overlay" data-menu>
   <div class="mobile-menu">
-    <button type="button" class="close-button" data-menu-close>
+    <button
+      type="button"
+      class="close-button"
+      aria-label="close mobile menu"
+      data-menu-close
+    >
       <svg class="close-icon-mobile" width="40" height="40">
         <use href="/green-harvest/assets/icons-CAKR4h1E.svg#icon-close-des"></use>
       </svg>
     </button>
-      <nav class="nav-menu">
-        <ul class="menu-list">
-          <li class="menu-item">
-            <a class="link current" href="#howitworks">How It Works</a>
-          </li>
-          <li class="menu-item">
-            <a class="link" href="#vegetables">Vegetables</a>
-          </li>
-          <li class="menu-item"><a class="link" href="#reviews">Reviews</a></li>
-        </ul>
-      </nav>
-      <button type="button" class="button">Shop now</button>
-    </div>
+    <nav class="nav-menu">
+      <ul class="menu-list">
+        <li class="menu-item">
+          <a class="link current" href="#howitworks">How It Works</a>
+        </li>
+        <li class="menu-item">
+          <a class="link" href="#vegetables">Vegetables</a>
+        </li>
+        <li class="menu-item"><a class="link" href="#reviews">Reviews</a></li>
+      </ul>
+    </nav>
+    <button type="button" aria-label="Shop now" class="button">Shop now</button>
   </div>
+</div>
 
 
     <main>
@@ -406,74 +417,123 @@
 </section>
 
       <section class="your-order">
-    <div class="container">
-        <div class="header-wrapp">
-            <h2 class="your-order-header">fresh <span class="order-header-part">harvest</span> box has got you covered
-            </h2>
-            <p class="your-order-text">Our boxes are packed with delicious, nutritious vegetables, perfect for anyone
-                looking to eat
-                healthier or support local
-                farmers. Order your box today and start enjoying the best that nature has to offer!</p>
-        </div>
-        <div class="wrap">
-            <div class="order-form-wrapp">
-                <form class="order-form">
-                    <h3 class="order-form-header">Ordering <span class="order-form-onp">from us</span> is quick and
-                        easy! fill out <span class="order-form-twp">the form</span> below and we will contact you !</h3>
-                    <div class="order-form-cont">
-                        <div class="label-wrapp">
-                            <div class="label-cont">
-                            <label class="order-form-lable" for="name"></label>
-                                <input class="order-form-inp order-form-inp-name" type="text" placeholder="Full Name" id="name"
-                                    name="Name" pattern="^[A-Z][a-z]+(?:\s[A-Z][a-z]+)?$" required>
-                                <p class="text-valid-name">Succes!</p>
-                                <p class="text-invalid-name">Enter a valid full name with first letter capitalized</p>
-                            </div>
-                            <div class="label-cont">
-                            <label class="order-form-lable" for="email"></label>
-                                <input class="order-form-inp" type="email" placeholder="Email" name="Email" id="email"
-                                    pattern="([A-Za-z0-9_.-]+)@([A-Za-z0-9_.-]+)\.([A-Za-z]{2,8})" required>
-                                <p class="text-valid">Succes!</p>
-                                <p class="text-invalid">Invalid email, try again</p>
-                            </div>
-                            <label class="order-textarea-wrapp">
-                                <textarea class="order-form-textarea" name="Comment" placeholder="Comment"></textarea>
-                            </label>
-                        </div>
-                        <button class="order-form-button" type="submit">send</button>
-                    </div>
-
-                </form>
-           </div>
-        <div class="networks-wrapp">
-            <picture >
-                <source media="(min-width: 1280px)"
-                    srcset="/green-harvest/assets/fresh-des-Ce1MLq5G.webp 1x, /green-harvest/assets/fresh-des@2x-BdfxFSGi.webp 2x">
-                <source media="(min-width: 768px)"
-                    srcset="/green-harvest/assets/fresh-tab-DBChSfsR.webp 1x, /green-harvest/assets/fresh-tab@2x-DQwgVaXZ.webp 2x">
-                <source media="(max-width: 767px)"
-                    srcset="/green-harvest/assets/fresh-mob-DYH2c3Ck.webp 1x, /green-harvest/assets/fresh-mob@2x-BjhdzC6T.webp 2x">
-                <img class="networks-wrapp-img" src="/green-harvest/assets/fresh-des-Ce1MLq5G.webp" alt="squeeze lemon juice into a bottle" />
-            </picture>
-            
-           
-            <div class="networks-list-wrapp">
-                <p class="networks-link-text">Follow us on our social networks:</p>
-                <ul class="networks">
-                    <li class="networks-link"> <a class="networks-link-link"
-                            href="https://www.instagram.com/goitclub/">instagram</a></li>
-                    <li class="networks-link"> <a class="networks-link-link" href="https://www.youtube.com/c/GoIT">youtube</a>
-                    </li>
-                    <li class="networks-link"> <a class="networks-link-link"
-                            href="https://www.facebook.com/goITclub/">facebook</a></li>
-                </ul>
-            </div>
-         </div>
-       </div>
-
+  <div class="container">
+    <div class="header-wrapp">
+      <h2 class="your-order-header">
+        fresh <span class="order-header-part">harvest</span> box has got you
+        covered
+      </h2>
+      <p class="your-order-text">
+        Our boxes are packed with delicious, nutritious vegetables, perfect for
+        anyone looking to eat healthier or support local farmers. Order your box
+        today and start enjoying the best that nature has to offer!
+      </p>
     </div>
-</section>
+    <div class="wrap">
+      <div class="order-form-wrapp">
+        <form class="order-form">
+          <h3 class="order-form-header">
+            Ordering <span class="order-form-onp">from us</span> is quick and
+            easy! fill out <span class="order-form-twp">the form</span> below
+            and we will contact you !
+          </h3>
+          <div class="order-form-cont">
+            <div class="label-wrapp">
+              <div class="label-cont">
+                <label class="order-form-lable" for="name"></label>
+                <input
+                  class="order-form-inp order-form-inp-name"
+                  type="text"
+                  placeholder="Full Name"
+                  id="name"
+                  name="Name"
+                  pattern="^[A-Z][a-z]+(?:\s[A-Z][a-z]+)?$"
+                  required
+                />
+                <p class="text-valid-name">Succes!</p>
+                <p class="text-invalid-name">
+                  Enter a valid full name with first letter capitalized
+                </p>
+              </div>
+              <div class="label-cont">
+                <label class="order-form-lable" for="email"></label>
+                <input
+                  class="order-form-inp"
+                  type="email"
+                  placeholder="Email"
+                  name="Email"
+                  id="email"
+                  pattern="([A-Za-z0-9_.-]+)@([A-Za-z0-9_.-]+)\.([A-Za-z]{2,8})"
+                  required
+                />
+                <p class="text-valid">Succes!</p>
+                <p class="text-invalid">Invalid email, try again</p>
+              </div>
+              <label class="order-textarea-wrapp">
+                <textarea
+                  class="order-form-textarea"
+                  name="Comment"
+                  placeholder="Comment"
+                ></textarea>
+              </label>
+            </div>
+            <button class="order-form-button" aria-label="Send" type="submit">
+              send
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="networks-wrapp">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="/green-harvest/assets/fresh-des-Ce1MLq5G.webp 1x, /green-harvest/assets/fresh-des@2x-BdfxFSGi.webp 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/green-harvest/assets/fresh-tab-DBChSfsR.webp 1x, /green-harvest/assets/fresh-tab@2x-DQwgVaXZ.webp 2x"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/green-harvest/assets/fresh-mob-DYH2c3Ck.webp 1x, /green-harvest/assets/fresh-mob@2x-BjhdzC6T.webp 2x"
+          />
+          <img
+            class="networks-wrapp-img"
+            src="/green-harvest/assets/fresh-des-Ce1MLq5G.webp"
+            alt="squeeze lemon juice into a bottle"
+          />
+        </picture>
 
+        <div class="networks-list-wrapp">
+          <p class="networks-link-text">Follow us on our social networks:</p>
+          <ul class="networks">
+            <li class="networks-link">
+              <a
+                class="networks-link-link"
+                href="https://www.instagram.com/goitclub/"
+                >instagram</a
+              >
+            </li>
+            <li class="networks-link">
+              <a
+                class="networks-link-link"
+                href="https://www.youtube.com/c/GoIT"
+                >youtube</a
+              >
+            </li>
+            <li class="networks-link">
+              <a
+                class="networks-link-link"
+                href="https://www.facebook.com/goITclub/"
+                >facebook</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     </main>
 
