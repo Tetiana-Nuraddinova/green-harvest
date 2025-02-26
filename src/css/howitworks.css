@@ -1,7 +1,7 @@
 .how-it-works {
   background: linear-gradient(to bottom, #7a3145 56%, #576f35 50%);
 }
-.img-hiw { 
+.img-hiw {
   padding: 40px 20px;
   background-color: #7a3145;
 }
@@ -12,15 +12,11 @@
 
 .items-hiw {
   counter-increment: count;
-  
 }
 
 .counter-steps-hiw::before {
   content: counter(count);
-  
   display: block;
-  
-
 }
 
 .woman-hiw {
@@ -30,8 +26,7 @@
 }
 
 .content-hiw {
-  
-  padding: 80px 20px; 
+  padding: 80px 20px;
   margin: 0 auto;
   background-color: #576f35;
 }
@@ -69,10 +64,9 @@
 }
 
 .steps-hiw {
-  
   display: flex;
-    flex-direction: column;
-    align-items: center;
+  flex-direction: column;
+  align-items: center;
   gap: 20px;
 }
 
@@ -105,6 +99,10 @@
   text-transform: uppercase;
 }
 
+.s-hidden {
+  display: none;
+}
+
 .action-items-hiw {
   color: #858585;
   font-size: 14px;
@@ -134,9 +132,8 @@
   }
 
   .title-hiw {
-    
-        min-width: 440px;
-      
+    min-width: 440px;
+
     font-size: 32px;
     margin-bottom: 24px;
   }
@@ -154,7 +151,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-.how-it-works {
+  .how-it-works {
     background: linear-gradient(to right, #7a3145 50%, #576f35 50%);
   }
   .desk-only-hiw {
@@ -172,9 +169,12 @@
     padding: 100px;
     margin: 0 auto 0 0;
   }
- 
+
+  .text-cont-hiw {
+    margin-bottom: 104px;
+  }
+
   .text-hiw {
-    
     margin-bottom: 104px;
   }
 }
