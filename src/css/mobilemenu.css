@@ -20,9 +20,9 @@
 }
 
 .mobile-menu {
-    background-color: rgb(87, 111, 53);
+    background-color: #576f35;
     position: relative;
-       padding-top: 296px;
+       
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -74,12 +74,12 @@
     width: 118px;
     height: 44px;
     background-color: transparent;
-    border: 1px solid rgb(251, 251, 251);
+    border: 1px solid #fbfbfb;
     border-radius: 12px;
 }
 
 .menu-item .link {
-    color: rgb(251, 251, 251);
+    color: #fbfbfb;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.43;
@@ -88,12 +88,12 @@
 }
 
 .menu-item .link.current {
-    color: rgb(122, 49, 69);
+    color: #7a3145;
 }
 
 .menu-item:has(.link.current) {
-    background-color: white;
-    border-color: white;
+    background-color: #fbfbfb;
+    border-color: #fbfbfb;
 }
 
 .button {
@@ -105,16 +105,23 @@
     line-height: 1.11;
     letter-spacing: 0.04em;
     cursor: pointer;
-    color: rgb(251, 251, 251);
-    background-color: rgb(122, 49, 69);
+    color: #fbfbfb;
+    background-color: #7a3145;
     border: none;
     border-radius: 30px;
-    margin: 0 ;
-    position: fixed;
-    bottom: 52px;
+   
     
 }
-
+ .container-nav {
+    margin: 0;
+    position: fixed;
+    bottom: 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 232px;
+ }
 
 @media (min-width: 768px) {
     .mobile-menu {
@@ -122,10 +129,7 @@
         margin-left: auto;
     }
     
-    .mobile-menu {
-        padding-top: 360px;
-        
-    }
+  
 
     .close-button {
         width: 40px;
@@ -145,5 +149,9 @@
         width: 157px;
         bottom: 48px;
     }
+        .container-nav {
+            gap: 380px;
+            bottom: 48px;
+        }
 }
 

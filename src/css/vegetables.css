@@ -2,8 +2,11 @@
 .vegetables-section {
 padding-top: 80px;
   padding-bottom: 80px;
+  background-color: #7A3145;
 }
-
+.vegetables-section-container {
+  
+}
 .vegetables-header {
   font-size: 48px;
   font-weight: 600;

@@ -1,5 +1,9 @@
+.how-it-works {
+  background: linear-gradient(to right, rgb(122, 49, 69) 50%, #576f35 50%);
+}
 .img-hiw {
   padding: 40px 20px;
+  
 }
 /* --  counter for steps 1-2-3  -- */
 .steps-hiw {
@@ -17,11 +21,13 @@
 .woman-hiw {
   /* height: 452px; */
   border-radius: 30px;
+  margin: 0 auto;
 }
 
 .content-hiw {
   padding: 80px 20px;
-  background-color: #576f35;
+ 
+  margin: 0 auto;
 }
 
 .title-hiw {
