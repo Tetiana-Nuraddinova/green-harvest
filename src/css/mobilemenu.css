@@ -27,11 +27,12 @@
         flex-direction: column;
         align-items: center;
         height: 100%;
-        
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
     }
 
 .mobile-menu.is-open {
-    right: 0;
+    transform: translateX(0);
 }
 
 
