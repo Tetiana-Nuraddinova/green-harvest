@@ -169,6 +169,7 @@
 
   .content-hiw {
     max-width: 640px;
+    height: 100%;
     padding: 100px;
     margin: 0 auto 0 0;
   }
