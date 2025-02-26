@@ -411,11 +411,16 @@
 }
 
 @media only screen and (min-width: 1280px) {
-    .networks-wrapp {
-        padding: 52px 48px;
-        min-width: 524px;
-        min-height: 592px;
-        margin-top: auto;
+.networks-wrapp {
+    padding: 52px 48px;
+    min-width: 524px;
+    min-height: 592px;
+    margin-top: auto;
     }
+.order-form-button:focus,
+.order-form-button:hover {
+    background: #d4bfc4;
+    color: #7a3145;
+        }
 
 }

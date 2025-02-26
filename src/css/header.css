@@ -50,6 +50,16 @@
     text-align: center;
     color: #fbfbfb;
 }
+.header-list-item:hover,
+.header-list-item:focus {
+    background-color: #d4bfc4;
+    color: #7a3145;
+}
+
+.header-list-item:active {
+    background-color: #fbfbfb;
+    color: #7a3145;
+}
 
 
 .header-btn{
@@ -128,5 +138,9 @@
         background-color: #d4bfc4;
         color: #7a3145;
     }
-    
+   .header-btn:focus,
+   .header-btn:hover {
+       background-color: #d4bfc4;
+       color: #7a3145;
+   }
 }
