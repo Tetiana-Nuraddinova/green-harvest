@@ -1,4 +1,4 @@
-.header{
+.header {
     width: 100%;
     top: 20px;
     position: absolute;
@@ -14,7 +14,7 @@
     height: 16px;
 }
 
-.header-content{
+.header-content {
     width: 100%;
     max-width: 375px;
     padding: 0 20px;
@@ -27,18 +27,18 @@
 }
 
 .header-nav {
-    margin: 0 ;
+    margin: 0;
     gap: 20px;
     display: none;
 }
 
-.header-list{
+.header-list {
     display: flex;
     gap: 8px;
 }
 
 
-.header-list-item{
+.header-list-item {
     display: flex;
     padding: 12px;
     border: 1px solid #fbfbfb;
@@ -50,9 +50,10 @@
     text-align: center;
     color: #fbfbfb;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+    color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
+
 .header-list-item:hover,
 .header-list-item:focus {
     background-color: #d4bfc4;
@@ -78,10 +79,10 @@
     color: #fbfbfb;
     border: none;
     cursor: pointer;
-     /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);  */
+    /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);  */
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-            color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} 
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .header-btn:hover,
 .header-btn:focus {
@@ -94,8 +95,8 @@
     color: #7a3145;
 }
 
-.header-menu-button{
-    
+.header-menu-button {
+
     width: 32px;
     height: 32px;
     background-color: transparent;
@@ -103,7 +104,7 @@
     cursor: pointer;
 }
 
-.header-menu-button-icon{
+.header-menu-button-icon {
     stroke: #fbfbfb;
     width: 32px;
     height: 32px;
@@ -114,15 +115,18 @@
 
     .header {
         top: 32px;
-        }
-    .header-content{
+    }
+
+    .header-content {
         max-width: 768px;
         padding: 0 32px;
     }
+
     .header-logo {
         width: 216px;
         height: 20px;
     }
+
     .header-menu-button-icon {
         width: 40px;
         height: 40px;
@@ -130,21 +134,25 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .header-nav{
+    .header-nav {
         display: flex;
     }
+
     .header {
         top: 32px;
     }
+
     .header-menu-button {
         display: none;
     }
+
     .header-content {
         max-width: 1280px;
         padding: 0 32px;
     }
-.header-nav .header-btn:active {
-    background-color: #fbfbfb;
-    color: #d4bfc4;
-}
+
+    .header-nav .header-btn:active {
+        background-color: #fbfbfb;
+        color: #d4bfc4;
+    }
 }
