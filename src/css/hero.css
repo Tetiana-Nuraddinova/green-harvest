@@ -1,4 +1,4 @@
-.hero-section {
+.hero {
     padding-top: 100px;
     background: #576F35;
 }
@@ -16,7 +16,7 @@
 }
 
 .hero-title {
-    
+
     font-weight: 600;
     font-size: 52px;
     line-height: 1;
@@ -73,19 +73,23 @@
 }
 
 @media screen and (min-width: 768px) {
+    .hero {
+        padding-top: 0;
+    }
+
     .hero-section {
         padding-top: 120px;
     }
-        .hero-container {
-            max-width: 768px;
+
+    .hero-container {
+        max-width: 768px;
         padding: 0
-          
-        }
+    }
 
     .hero-text {
         margin-bottom: 52px;
         max-width: 704px;
-        
+
     }
 
     .hero-title {
@@ -157,10 +161,8 @@
     .hero-img {
         background-image: url(/img/hero/hero-des.webp);
         max-width: 640px;
-        height: 796px;
-        margin: 0;
+        min-height: 796px;
         margin-right: auto;
-        padding: 0;
     }
 
     @media screen and (min-resolution:2x) {
