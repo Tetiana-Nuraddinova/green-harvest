@@ -15,18 +15,20 @@
                         easy! fill out <span class="order-form-twp">the form</span> below and we will contact you !</h3>
                     <div class="order-form-cont">
                         <div class="label-wrapp">
-                            <label class="order-form-lable">
-                                <input class="order-form-inp order-form-inp-name" type="text" placeholder="Full Name"
+                            <div class="label-cont">
+                            <label class="order-form-lable" for="name"></label>
+                                <input class="order-form-inp order-form-inp-name" type="text" placeholder="Full Name" id="name"
                                     name="Name" pattern="^[A-Z][a-z]+(?:\s[A-Z][a-z]+)?$" required>
                                 <p class="text-valid-name">Succes!</p>
                                 <p class="text-invalid-name">Enter a valid full name with first letter capitalized</p>
-                            </label>
-                            <label class="order-form-lable">
-                                <input class="order-form-inp" type="email" placeholder="Email" name="Email"
+                            </div>
+                            <div class="label-cont">
+                            <label class="order-form-lable" for="email"></label>
+                                <input class="order-form-inp" type="email" placeholder="Email" name="Email" id="email"
                                     pattern="([A-Za-z0-9_.-]+)@([A-Za-z0-9_.-]+)\.([A-Za-z]{2,8})" required>
                                 <p class="text-valid">Succes!</p>
                                 <p class="text-invalid">Invalid email, try again</p>
-                            </label>
+                            </div>
                             <label class="order-textarea-wrapp">
                                 <textarea class="order-form-textarea" name="Comment" placeholder="Comment"></textarea>
                             </label>
