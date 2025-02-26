@@ -8,6 +8,7 @@
 /* --  counter for steps 1-2-3  -- */
 .steps-hiw {
   counter-reset: count;
+  
 }
 
 .items-hiw {
@@ -20,11 +21,10 @@
   
   display: block;
   
-
 }
 
 .woman-hiw {
-  /* height: 452px; */
+ 
   border-radius: 30px;
   margin: 0 auto;
 }
