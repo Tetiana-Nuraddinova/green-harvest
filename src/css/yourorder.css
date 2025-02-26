@@ -268,7 +268,7 @@
 
     .order-form-inp {
         height: 52px;
-        padding: ;
+        
     }
 
     .order-form-textarea {
@@ -294,7 +294,7 @@
 @media only screen and (min-width: 1280px) {
     .order-form-wrapp {
         max-width: 524px;
-        max-height: 592px;
+        max-height: auto;
         padding: 52px 48px;
     }
 
