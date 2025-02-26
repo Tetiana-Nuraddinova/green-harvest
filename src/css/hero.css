@@ -12,7 +12,6 @@
 
 .hero-text {
     margin-bottom: 40px;
-
 }
 
 .hero-title {
@@ -138,7 +137,7 @@
         margin-top: 232px;
         margin-left: 100px;
         margin-right: 36px;
-        margin-bottom: 0;
+        margin-bottom: 52px;
         max-width: 504px;
     }
 
@@ -149,10 +148,7 @@
 
     .hero-subtitle {
         width: 472px;
-        padding-bottom: 52px;
     }
-
-
 
     .container-img {
         width: 640px;
