@@ -1,7 +1,9 @@
 
+html {
+  scroll-behavior: smooth;}
 body {
   font-family: "Inter Tight", sans-serif;
- scroll-behavior: smooth;
+ 
 }
 
 main {
