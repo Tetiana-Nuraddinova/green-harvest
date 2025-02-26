@@ -12,10 +12,15 @@
 
 .items-hiw {
   counter-increment: count;
+  
 }
 
 .counter-steps-hiw::before {
   content: counter(count);
+  
+  display: block;
+  
+
 }
 
 .woman-hiw {

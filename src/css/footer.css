@@ -33,9 +33,7 @@
     color: #fbfbfb;    
 }
 
-.footer-menu{
-    margin-bottom: 40px;    
-}
+
 
 .footer-menu-list{
     max-width: 335px;
@@ -43,6 +41,7 @@
     flex-wrap: wrap;
     flex-direction: column; 
     gap: 14px; 
+    margin-bottom: 40px;
 }
 
 .footer-menu-link{          
