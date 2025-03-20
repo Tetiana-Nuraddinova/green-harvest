@@ -259,16 +259,17 @@
     background-color: #fbfbfb;
     color: #7a3145;
 }
-.networks-link-link::after {
-    content: "/";
+.link-slash {
+    
     width: 7px;
     height: 20px;
     font-weight: 600;
     font-size: 18px;
     text-transform: uppercase;
-    margin-left: 8px;
-
+    margin: 0 8px;
+    color:#fbfbfb ;
 }
+
 
 
 .networks-link-link {
@@ -279,13 +280,11 @@
     text-transform: uppercase;
     color: #fbfbfb;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border-radius: 12px;
+    border-radius: 8px;
+    padding: 2px 6px;
 
 }
 
-.networks li:last-child .networks-link-link::after {
-    content: "";
-}
 
 
 
